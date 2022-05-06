@@ -8,7 +8,7 @@ import axios from "axios";
 //   API_URL = `${process.env.REACT_APP_API_URL_PRODUCTION}`;
 // }
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://still-atoll-44102.herokuapp.com";
 
 export const getCredentials = async (roomName) => {
   return axios.get(`${API_URL}/session/${roomName}`);
